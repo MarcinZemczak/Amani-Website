@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html>
+<head>
+ <meta name="description" content="Amani Music Official">
+  <meta name="keywords" content="amaniofficialmusic,amani,pbr,pointblankrecordings,the earth revolves, perpendicular,">
+  <meta name="author" content="Amani">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="distribution" content="web">
+ <link rel="stylesheet" href="style.css"> 
+<title>Amani</title>
+
+<script language="javascript" src="jquery.min.js"></script>
+<script> 
+var res;
+	
+$(document).ready(function(){
+	if ($("#intro").is(':visible')) {
+		document.getElementById('intro').play();
+	}
+
+});
+	
+function runloop(){
+	$("#intro").hide();
+	$("#loop").show();
+	document.getElementById('loop').play();
+};
+</script> 
+
+</head>
+
+<body>
+    <div class='background-video fade-in'>
+        <video src="assets/video/intro.mp4" class="desktop" id="intro" muted playsinline onended="runloop()"></video>
+        <video src="assets/video/loop.mp4"  class="desktop" id="loop" loop muted playsinline  style="display: none;"></video>
+    </div>
+    <div id="content" class='fade-in'>
+        <img src="assets/images/Artboard%202@4x.png">
+            <div class='socials'>
+                <a href='https://open.spotify.com/album/74ceY59oshp4qWpdTfYQkn'><img src="assets/images/white-spotify.png"></a>
+                 <a href='https://www.youtube.com/channel/UC6h76Ipl8Os1BAB8mdli8Og'><img src='assets/images/yticondark.png' style='margin-bottom: 4px;'></a>
+                <a href='https://www.instagram.com/amani_ami_official/'><img src='assets/images/white-insta.png'></a>
+                <a href='https://www.facebook.com/AmaniOfficialMusic/'><img src="assets/images/white%20FB%20logo.png" style='margin-left:-6px;'></a>
+                <a href='https://twitter.com/amaniami_?lang=en'><img src="assets/images/white%20Twitter.png"></a>
+            </div>
+    </div>
+</body>
+
+</html> 
